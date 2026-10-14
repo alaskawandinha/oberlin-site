@@ -1,77 +1,574 @@
-.banner {
-    text-align: center;
-    padding: 80px;
-    background: rgba(255, 255, 255, 0.664);
-    color: black;
-}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&display=swap');
+
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
-  background-color: #ffffff;
+    background-color: #ffffff;
+    color: #111111;
 }
 
 /* HEADER */
+
 header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 30px;
-  background-color: white;
-  border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 22px 45px;
+    background-color: white;
+    border-bottom: 1px solid #e5e5e5;
 }
 
+/* LOGO */
+
 header h1 {
-  font-size: 24px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    letter-spacing: -1px;
+}
+
+/* MENU */
+
+nav {
+    display: flex;
+    align-items: center;
 }
 
 nav a {
-  margin-left: 15px;
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
+    margin-left: 25px;
+    text-decoration: none;
+    color: #111111;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+nav a:hover {
+    color: #777777;
+}
+
+/* BANNER */
+
+.banner {
+    text-align: center;
+    padding: 65px 20px;
+    background: #f7f7f7;
+    color: black;
+}
+
+.banner h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.banner p {
+    color: #666666;
+    font-size: 15px;
 }
 
 /* CARDS */
+
 .cards {
-  display: flex;
-  gap: 20px;
-  padding: 30px;
+    display: flex;
+    gap: 25px;
+    padding: 40px 45px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .card {
-  background: white;
-  border-radius: 10px;
-  padding: 15px;
-  width: 300px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-
-  /* IMPORTANTE */
-  text-decoration: none;
-  color: black;
-  display: block;
-  transition: 0.3s;
+    background: white;
+    border-radius: 4px;
+    padding: 15px;
+    width: 300px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+    text-decoration: none;
+    color: black;
+    display: block;
+    transition: 0.3s;
 }
 
 .card:hover {
-  transform: scale(1.03);
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
 }
 
 .card h2 {
-  font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    margin-top: 12px;
+    margin-bottom: 6px;
 }
 
 .card p {
-  font-size: 14px;
-  color: gray;
-  margin-bottom: 10px;
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
 }
 
 .card img {
-  width: 100%;
-  border-radius: 10px;
+    width: 100%;
+    border-radius: 3px;
+    display: block;
+    cursor: pointer;
+}
+
+/* TITULOS */
+
+main > h2 {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 28px;
+    margin: 45px 20px 25px;
+}
+
+/* BOTÕES */
+
+button {
+    border: none;
+    background: #111111;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.2s;
+}
+
+button:hover {
+    background: #333333;
+}
+
+/* FORMULÁRIOS */
+
+form {
+    width: 90%;
+    max-width: 400px;
+    margin: 50px auto;
+}
+
+input {
+    width: 100%;
+    padding: 13px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+input:focus {
+    outline: none;
+    border-color: #111111;
+}
+
+/* CELULAR */
+
+@media (max-width: 700px) {
+
+    header {
+        padding: 20px;
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    nav a {
+        margin-left: 8px;
+        margin-right: 8px;
+    }
+
+    .cards {
+        padding: 25px 20px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .banner {
+        padding: 50px 20px;
+    }
+}
+
+/* FORMULÁRIO DE CONTATO */
+
+.contato {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.contato h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.contato > p {
+    color: #666666;
+    margin-bottom: 30px;
+}
+
+.contato form {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.contato input,
+.contato textarea {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 15px;
+    border: 1px solid #dddddd;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.contato textarea {
+    height: 140px;
+    resize: vertical;
+}
+
+.contato input:focus,
+.contato textarea:focus {
+    outline: none;
+    border-color: #111111;
+}
+
+.contato button {
+    width: 100%;
+    padding: 14px;
+    background: #111111;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+.contato button:hover {
+    background: #333333;
+}
+
+/* CARRINHO */
+
+.carrinho {
+    text-align: center;
+    padding: 55px 20px;
+}
+
+.carrinho h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 800;
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.carrinho-box {
+    width: 90%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 40px;
+    border: 1px solid #e5e5e5;
+    background: white;
+}
+
+.carrinho-box p {
+    color: #666666;
+    margin-bottom: 10px;
+}
+
+/* PRODUTOS DO CARRINHO */
+
+#lista-carrinho {
+    width: 90%;
+    max-width: 800px;
+    margin: 0 auto 30px;
+    text-align: center;
+}
+
+.produto-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    background: white;
+    text-align: left;
+}
+
+.produto-carrinho img {
+    width: 120px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.produto-carrinho h3 {
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 10px;
+}
+
+.produto-carrinho p {
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.produto-carrinho button {
+    margin-right: 5px;
+}
+
+/* TOTAL */
+
+#total-carrinho {
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    margin: 25px;
+}
+
+/* BOTÃO CONTINUAR COMPRANDO */
+
+.botao-comprar {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #111111;
+    color: white;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* BOTÃO FINALIZAR */
+
+.botao-finalizar {
+    display: block;
+    margin: 20px auto;
+    padding: 13px 25px;
+    background: #111111;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* DEIXA OS DOIS BOTÕES IGUAIS */
+
+.botao-finalizar,
+.botao-comprar {
+    padding: 13px 25px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 3px;
+}
+
+.botao-finalizar:hover,
+.botao-comprar:hover {
+    background: #333333;
+}
+
+/* PAGAMENTO */
+
+.pagamento {
+    display: none;
+    width: 90%;
+    max-width: 400px;
+    margin: 30px auto;
+    padding: 25px;
+    text-align: center;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background: white;
+}
+
+.botao-pagamento {
+    display: block;
+    margin: 20px auto;
+}
+
+/* =========================
+   PÁGINA DO PRODUTO
+========================= */
+
+.produto-detalhes {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+    display: flex;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+/* FOTO */
+
+.produto-imagem {
+    width: 55%;
+}
+
+.produto-imagem img {
+    width: 100%;
+    max-height: 700px;
+    object-fit: contain;
+    display: block;
+}
+
+/* INFORMAÇÕES */
+
+.produto-informacoes {
+    width: 45%;
+    padding-top: 10px;
+}
+
+.marca-produto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: #777777;
+    margin-bottom: 12px;
+}
+
+.produto-informacoes h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+.preco {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.produto-informacoes hr {
+    border: none;
+    border-top: 1px solid #dddddd;
+    margin: 20px 0;
+}
+
+.produto-informacoes h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 16px;
+    font-weight: 800;
+    margin: 20px 0 12px;
+}
+
+/* TAMANHOS */
+
+.tamanhos {
+    display: flex;
+    gap: 8px;
+}
+
+.tamanhos button {
+    background: white;
+    color: #111111;
+    border: 1px solid #cccccc;
+    width: 55px;
+    height: 45px;
+    padding: 0;
+}
+
+.tamanhos button:hover {
+    background: #111111;
+    color: white;
+}
+
+.tamanho-escolhido {
+    color: #666666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.guia-medidas {
+    display: inline-block;
+    color: #111111;
+    margin-top: 10px;
+    font-size: 14px;
+    text-decoration: underline;
+}
+
+/* TEXTO */
+
+.texto-produto {
+    color: #555555;
+    line-height: 1.6;
+    font-size: 14px;
+}
+
+/* BOTÃO ADICIONAR */
+
+.botao-adicionar {
+    width: 100%;
+    height: 55px;
+    margin-top: 30px;
+    background: #111111;
+    color: white;
+    border: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+.botao-adicionar:hover {
+    background: #333333;
+}
+
+/* CELULAR - PRODUTO */
+
+@media (max-width: 700px) {
+
+    .produto-detalhes {
+        width: 90%;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .produto-imagem {
+        width: 100%;
+    }
+
+    .produto-informacoes {
+        width: 100%;
+    }
+
+    .produto-informacoes h2 {
+        font-size: 27px;
+    }
+
+    .produto-carrinho {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .produto-carrinho img {
+        width: 150px;
+        height: 180px;
+    }
 }
