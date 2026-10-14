@@ -1,59 +1,194 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Casual - Oberlin</title>
-  <link rel="stylesheet" href="style.css">
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Casual - Oberlin</title>
+
+    <link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
 <header>
-  <h1>Oberlin</h1>
+
+    <h1>Oberlin</h1>
+
+    <nav>
+
+        <a href="index.html">Início</a>
+        <a href="casual.html">Casual</a>
+        <a href="academia.html">Academia</a>
+        <a href="best seller.html">Best Seller</a>
+        <a href="login.html">Login</a>
+        <a href="contato.html">Contato</a>
+        <a href="carrinho.html">🛒 Carrinho</a>
+
+    </nav>
+
 </header>
 
+
 <main>
-  <h2 style="padding: 20px;">Produtos Casual</h2>
 
-  <section class="cards">
-    <div class="card">
-      <h3>Top Sueter</h3>
-      <img src=https://aloyogabr.vtexassets.com/arquivos/ids/203886-500-750?v=639090380482530000&width=500&height=750&aspect=true>
-      <p>R$ 740,00</p>
-    <button onclick="adicionarCarrinho('Top Sueter')">
-        Adicionar ao Carrinho
-    </button>
+    <h2>Casual</h2>
+
+    <div class="cards">
+
+
+        <!-- JAQUETA HOPE -->
+
+        <div class="card">
+
+            <h3>Jaqueta Hope </h3>
+
+            <img
+                src="https://aloyogabr.vtexassets.com/arquivos/ids/215184/produto.webp"
+                onclick="verProduto(
+                    'Jaqueta Hope',
+                    740,
+                    'https://aloyogabr.vtexassets.com/arquivos/ids/215184/produto.webp'
+                )"
+                style="cursor: pointer;"
+            >
+
+            <p><br> R$ 740,00<br></p>
+
+            <button onclick="adicionarCarrinho(
+                'Jaqueta Hope',
+                740,
+                'https://aloyogabr.vtexassets.com/arquivos/ids/215184/produto.webp'
+            )">
+                Adicionar ao carrinho
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Cardigan</h3>
+
+            <img
+                src="https://aloyogabr.vtexassets.com/arquivos/ids/204747/produto.webp"
+                onclick="verProduto(
+                    'Cardigan',
+                    1410,
+                    'https://aloyogabr.vtexassets.com/arquivos/ids/204747/produto.webp'
+                )"
+                style="cursor: pointer;"
+            >
+
+            <p><br>R$ 650,00<br></p>
+
+            <button onclick="adicionarCarrinho(
+                'Cardigan',
+                650,
+                'https://aloyogabr.vtexassets.com/arquivos/ids/204747/produto.webp'
+            )">
+                Adicionar ao carrinho
+            </button>
+
+        </div>
+
+        
+
+        <div class="card">
+
+            <h3>Conjunto Primavera</h3>
+
+            <img
+                src="https://www.aloyoga.com/cdn/shop/files/W31015R_05594_b2_s1_a1_dSP26_m190_grande.jpg?v=1773830643"
+                onclick="verProduto(
+                    'Conjunto Primavera',
+                    740,
+                    'https://www.aloyoga.com/cdn/shop/files/W31015R_05594_b2_s1_a1_dSP26_m190_grande.jpg?v=1773830643'
+                )"
+                style="cursor: pointer;"
+            >
+
+            <p><br>R$ 740,00<br></p>
+
+            <button onclick="adicionarCarrinho(
+                'Conjunto Primavera',
+                740,
+                'https://www.aloyoga.com/cdn/shop/files/W31015R_05594_b2_s1_a1_dSP26_m190_grande.jpg?v=1773830643'
+            )">
+                Adicionar ao carrinho
+            </button>
+
+        </div>
+
+
+        <!-- VESTIDO TENNIS -->
+
+        <div class="card">
+
+            <h3>Vestido Tennis</h3>
+
+            <img
+                src="https://aloyogabr.vtexassets.com/arquivos/ids/216018/produto.webp"
+                onclick="verProduto(
+                    'Vestido Tennis',
+                    530,
+                    'https://aloyogabr.vtexassets.com/arquivos/ids/216018/produto.webp'
+                )"
+                style="cursor: pointer;"
+            >
+
+            <p><br>R$ 530,00<br></p>
+
+            <button onclick="adicionarCarrinho(
+                'Vestido Tennis',
+                530,
+                'https://aloyogabr.vtexassets.com/arquivos/ids/216018/produto.webp'
+            )">
+                Adicionar ao carrinho
+            </button>
+
+        </div>
+
+
+        <!-- SAIA TENNIS -->
+
+        <div class="card">
+
+            <h3>Saia Tennis</h3>
+
+            <img
+                src="https://aloyogabr.vtexassets.com/arquivos/ids/218877/produto.webp"
+                onclick="verProduto(
+                    'Saia Tennis',
+                    1075,
+                    'https://aloyogabr.vtexassets.com/arquivos/ids/218877/produto.webp'
+                )"
+                style="cursor: pointer;"
+            >
+
+            <p><br>R$ 450,00<br></p>
+
+            <button onclick="adicionarCarrinho(
+                'Saia Tennis',
+                1075,
+                'https://aloyogabr.vtexassets.com/arquivos/ids/218877/produto.webp'
+            )">
+                Adicionar ao carrinho
+            </button>
+
+        </div>
+
+
     </div>
-
-    <div class="card">
-      <h3>Cardigan</h3>
-      <img src=https://aloyogabr.vtexassets.com/arquivos/ids/204747/produto.webp>
-      <p>R$ 1410,00</p>
-    <button onclick="adicionarCarrinho('Cardigan')">
-        Adicionar ao Carrinho
-    </button>
-    </div>
-
-    <div class="card">
-      <h3>Short</h3>
-      <img src=https://aloyogabr.vtexassets.com/arquivos/ids/202816-500-750?v=639081391265470000&width=500&height=750&aspect=true>
-      <p>R$ 530,00</p>
-    <button onclick="adicionarCarrinho('Short')">
-        Adicionar ao Carrinho
-    </button>
-    </div>
-
-    <div class="card">
-      <h3>Moletom</h3>
-      <img src=https://aloyogabr.vtexassets.com/arquivos/ids/199711-500-750?v=639056368623970000&width=500&height=750&aspect=true>
-      <p>R$ 1075,00</p>
-    <button onclick="adicionarCarrinho('Moletom')">
-        Adicionar ao Carrinho
-    </button>
-    </div>
-
-  </section>
 
 </main>
+
+
 <script src="script.js"></script>
+
 </body>
+
 </html>
