@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Carrinho - Oberlin</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+    <h1>Oberlin</h1>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="casual.html">Casual</a>
+        <a href="academia.html">Academia</a>
+        <a href="best seller.html">Best Seller</a>
+        <a href="login.html">Login</a>
+        <a href="contato.html">Contato</a>
+        <a href="carrinho.html">🛒 Carrinho</a>
+    </nav>
+
+</header>
+
+<main class="carrinho">
+
+    <h2>Meu Carrinho</h2>
+
+    <div id="lista-carrinho"></div>
+
+    <h3 id="total-carrinho">
+        Total: R$ 0,00
+    </h3>
+
+    <br>
+
+    <!-- BOTÃO FINALIZAR COMPRA -->
+    <button id="botao-finalizar" onclick="finalizarCompra()" class="botao-finalizar" style="display: none;">
+    Finalizar Compra
+</button>
+
+    <br><br>
+
+
+    <a href="index.html" class="botao-comprar">
+        Continuar comprando
+    </a>
+
+    
+    <div id="pagamento" class="pagamento">
+
+        <h2>Pagamento</h2>
+
+        <p>Escolha uma forma de pagamento:</p>
+
+        <label>
+            <input type="radio" name="pagamento" value="Pix">
+            Pix
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="radio" name="pagamento" value="Cartão">
+            Cartão
+        </label>
+
+        <br><br>
+
+        <label>
+            <input type="radio" name="pagamento" value="Boleto">
+            Boleto
+        </label>
+
+        <br><br>
+
+        <button onclick="confirmarPagamento()" class="botao-pagamento">
+            Confirmar Pagamento
+        </button>
+
+    </div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
