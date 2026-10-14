@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Produto - Oberlin</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+<header>
+
+    <h1>Oberlin</h1>
+
+    <nav>
+
+        <a href="index.html">Início</a>
+
+        <a href="casual.html">Casual</a>
+
+        <a href="academia.html">Academia</a>
+
+        <a href="login.html">Login</a>
+
+        <a href="best seller.html">Best Seller</a>
+
+        <a href="contato.html">Contato</a>
+
+        <a href="carrinho.html">🛒 Carrinho</a>
+
+    </nav>
+
+</header>
+
+
+
+<main class="produto-detalhes">
+
+
+    <!-- IMAGEM DO PRODUTO -->
+
+    <div class="produto-imagem">
+
+        <img
+            id="produto-imagem"
+            src=""
+            alt="Produto Oberlin">
+
+    </div>
+
+
+
+    <!-- INFORMAÇÕES -->
+
+    <div class="produto-informacoes">
+
+
+        <p class="marca-produto">
+            OBERLIN
+        </p>
+
+
+        <h2 id="produto-nome"></h2>
+
+
+        <p
+            id="produto-preco"
+            class="preco">
+        </p>
+
+
+        <hr>
+
+
+        <!-- TAMANHOS -->
+
+        <h3>
+            Escolha o tamanho
+        </h3>
+
+
+        <div class="tamanhos">
+
+            <button onclick="escolherTamanho('P')">
+                P
+            </button>
+
+            <button onclick="escolherTamanho('M')">
+                M
+            </button>
+
+            <button onclick="escolherTamanho('G')">
+                G
+            </button>
+
+            <button onclick="escolherTamanho('GG')">
+                GG
+            </button>
+
+        </div>
+
+
+        <p
+            id="tamanho-escolhido"
+            class="tamanho-escolhido">
+
+            Nenhum tamanho escolhido
+
+        </p>
+
+
+        <hr>
+
+
+        <!-- TECIDO -->
+
+        <h3>
+            Tecido
+        </h3>
+
+
+        <p
+            id="produto-tecido"
+            class="texto-produto">
+
+            Tecido confortável e de alta qualidade.
+
+        </p>
+
+
+
+        <!-- DESCRIÇÃO -->
+
+        <h3>
+            Descrição
+        </h3>
+
+
+        <p
+            id="produto-descricao"
+            class="texto-produto">
+
+            Uma peça Oberlin criada para unir
+            estilo, conforto e qualidade.
+
+        </p>
+
+
+
+        <!-- BOTÃO -->
+
+        <button
+            class="botao-adicionar"
+            onclick="adicionarProdutoDetalhes()">
+
+            ADICIONAR AO CARRINHO
+
+        </button>
+
+
+    </div>
+
+
+</main>
+
+
+
+<!-- JAVASCRIPT -->
+
+<script src="script.js"></script>
+
+
+</body>
+
+</html>
