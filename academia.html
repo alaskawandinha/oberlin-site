@@ -1,59 +1,117 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
-  <meta charset="UTF-8">
-  <title>Academia - Oberlin</title>
-  <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Academia - Oberlin</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
 <header>
-  <h1>Oberlin</h1>
+
+    <h1>Oberlin</h1>
+
+    <nav>
+        <a href="index.html">Início</a>
+        <a href="casual.html">Casual</a>
+        <a href="academia.html">Academia</a>
+        <a href="best seller.html">Best Seller</a>
+        <a href="login.html">Login</a>
+        <a href="contato.html">Contato</a>
+        <a href="carrinho.html">🛒 Carrinho</a>
+    </nav>
+
 </header>
 
 <main>
-  <h2 style="padding: 20px;">Produtos Academia</h2>
 
-  <section class="cards">
-<div class="card">
-      <h3>Conjunto Ioga</h3>
-      <img src="https://aloyogabr.vtexassets.com/arquivos/ids/173725/produto.webp" alt="Conjunto Ioga">
-      <p>R$ 2037,00</p>
-      <button onclick="adicionarCarrinho('Conjunto Ioga')">
-        Adicionar ao Carrinho
-      </button>
-    </div>
+    <h2 style="padding: 20px;">Produtos Academia</h2>
 
-    <div class="card">
-      <h3>Top Academia</h3>
-      <img src="https://aloyogabr.vtexassets.com/arquivos/ids/213364/produto.webp" alt="Top Airlift Line Up">
-      <p>R$ 825,00</p>
-      <button onclick="adicionarCarrinho('Top academia')">
-        Adicionar ao Carrinho
-      </button>
-    </div>
+    <section class="cards">
 
-     <div class="card">
-      <h3>Legging Fitness</h3>
-      <img src="https://aloyogabr.vtexassets.com/arquivos/ids/212139/produto.webp" alt="Legging Airlift High-waist 7/8 Line Up">
-      <p>R$ 1035,00</p>
-      <button onclick="adicionarCarrinho('Legging Fitness')">
-        Adicionar ao Carrinho
-      </button>
-    </div>
+        <div class="card">
 
-  <div class="card">
-    <h3>Jaqueta Fitness</h3>
-    <img src="https://aloyogabr.vtexassets.com/arquivos/ids/206997/produto.webp">
-    <p>R$ 1750,00</p>
-    <button onclick="adicionarCarrinho('Jaqueta Fitness')">
-      Adicionar ao Carrinho
-    </button>
-  </div>    
+            <h3>Moletom Butter</h3>
+
+            <img
+            src="https://aloyogabr.vtexassets.com/arquivos/ids/196169/produto.webp"
+            onclick="verProduto('Moletom Butter', 1750, 'https://aloyogabr.vtexassets.com/arquivos/ids/196169/produto.webp')"
+            style="cursor: pointer;"
+>
+
+            <p><br>R$ 950,00<br></p>
+
+            <button onclick="adicionarCarrinho('Moletom Butter', 950, 'https://aloyogabr.vtexassets.com/arquivos/ids/196169/produto.webp')">
+                Adicionar ao Carrinho
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Top Coin</h3>
+
+            <img
+                src="https://aloyogabr.vtexassets.com/arquivos/ids/216296/produto.webp"
+                onclick="verProduto('Top Academia', 400, 'https://aloyogabr.vtexassets.com/arquivos/ids/216296/produto.webp')"
+                style="cursor: pointer;"
+            >
+
+            <p><br>R$ 400,00<br></p>
+
+            <button onclick="adicionarCarrinho('Top Academia', 400, 'https://aloyogabr.vtexassets.com/arquivos/ids/216296/produto.webp')">
+                Adicionar ao Carrinho
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Top Cup</h3>
+
+            <img
+                src="https://aloyogabr.vtexassets.com/arquivos/ids/215369/produto.webp"
+                onclick="verProduto('Top Cup', 550, 'https://aloyogabr.vtexassets.com/arquivos/ids/215369/produto.webp')"
+                style="cursor: pointer;"
+            >
+
+            <p><br>R$ 550,00<br></p>
+
+            <button onclick="adicionarCarrinho('Top Cup', 550, 'https://aloyogabr.vtexassets.com/arquivos/ids/215369/produto.webp')">
+                Adicionar ao Carrinho
+            </button>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Calça Prime</h3>
+
+            <img
+                src="https://aloyogabr.vtexassets.com/arquivos/ids/220707/produto.webp"
+                onclick="verProduto('Calça Prime', 550, 'https://aloyogabr.vtexassets.com/arquivos/ids/220707/produto.webp')"
+                style="cursor: pointer;"
+            >
+
+            <p><br>R$ 550,00<br></p>
+
+            <button onclick="adicionarCarrinho('Calça Prime', 550, 'https://aloyogabr.vtexassets.com/arquivos/ids/220707/produto.webp')">
+                Adicionar ao Carrinho
+            </button>
+
+            
+        </div>
+
     </section>
 
 </main>
+
 <script src="script.js"></script>
+
 </body>
 </html>
-
