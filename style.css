@@ -572,3 +572,21 @@ input:focus {
         height: 180px;
     }
 }
+.sobre-marca {
+  text-align: center;
+  padding: 50px 20px;
+  margin-top: 40px;
+  background-color: #f5f5f0;
+}
+
+.sobre-marca h2 {
+  font-size: 28px;
+  margin-bottom: 15px;
+}
+
+.sobre-marca p {
+  max-width: 750px;
+  margin: auto;
+  line-height: 1.7;
+  font-size: 16px;
+}
