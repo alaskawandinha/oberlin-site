@@ -593,6 +593,14 @@ input:focus {
   font-size: 16px;
   color: white;
 }
+.cards {
+    display: flex;
+    gap: 25px;
+    padding: 40px 45px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 @media (max-width: 700px) {
     header {
         flex-direction: column;
@@ -601,6 +609,11 @@ input:focus {
     nav {
         flex-wrap: wrap;
         justify-content: center;
+        gap: 15px;
+    }
+
+    nav a {
+        font-size: 18px;
     }
 
     .card {
